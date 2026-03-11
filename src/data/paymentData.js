@@ -68,9 +68,7 @@ export const contactAfterPayment = {
 
 // Datos del progreso de recaudación — actualizar conforme avance la campaña
 export const fundraisingProgress = {
-  // TODO: Actualizar 'raised' con el monto recaudado en soles conforme lleguen pagos
-  raised: 0,
+  raised: 500,
   goal: 40000,
-  // TODO: Actualizar 'supporters' con la cantidad real de personas que han apoyado
-  supporters: 0
+  supporters: 4
 };
