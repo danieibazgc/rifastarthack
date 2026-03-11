@@ -1,0 +1,136 @@
+/* Payment.module.css */
+
+.section {
+  background: #0a0a12;
+  padding: clamp(48px, 7vw, 80px) 0;
+}
+
+.paymentCard {
+  background: #12121e;
+  border: 1px solid #2a2a4a;
+  border-radius: 16px;
+  padding: 28px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.paymentCard:hover {
+  border-color: rgba(245, 197, 24, 0.4);
+  box-shadow: 0 8px 30px rgba(245, 197, 24, 0.08);
+}
+
+.paymentIcon {
+  width: 52px;
+  height: 52px;
+  background: rgba(245, 197, 24, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #f5c518;
+  margin-bottom: 16px;
+}
+
+.paymentName {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #e6e6e6;
+  margin-bottom: 4px;
+}
+
+.paymentType {
+  font-size: 0.8rem;
+  color: #8892b0;
+  margin-bottom: 16px;
+}
+
+.detailRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.detailRow:last-child {
+  border-bottom: none;
+}
+
+.detailKey {
+  font-size: 0.7rem;
+  color: #8892b0;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-weight: 500;
+}
+
+.detailValueRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+}
+
+.detailValue {
+  font-size: 0.88rem;
+  color: #e6e6e6;
+  font-weight: 600;
+  word-break: break-all;
+  letter-spacing: 0.3px;
+  flex: 1;
+  min-width: 0;
+}
+
+.stepsBox {
+  background: #12121e;
+  border: 1px solid #2a2a4a;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.stepItem {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.stepBadge {
+  min-width: 32px;
+  height: 32px;
+  background: #f5c518;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.contactCard {
+  background: rgba(245, 197, 24, 0.05);
+  border: 1px solid rgba(245, 197, 24, 0.2);
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+
+/* ── Mobile responsive ─────────────────── */
+@media (max-width: 767px) {
+  .paymentCard {
+    padding: 20px 16px;
+  }
+  .stepsBox {
+    padding: 20px 16px;
+  }
+  .contactCard {
+    padding: 16px;
+  }
+  .detailValue {
+    font-size: 0.82rem;
+  }
+}

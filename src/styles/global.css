@@ -1,0 +1,159 @@
+/* ============================================================
+   RifaStartHack — Estilos Globales
+   ============================================================ */
+
+/* Variables CSS */
+:root {
+  --primary: #f5c518;         /* Amarillo START Hack */
+  --primary-hover: #e6b800;
+  --dark-bg: #0d0d0d;
+  --section-bg: #111118;
+  --card-bg: #1a1a2e;
+  --card-border: #2a2a4a;
+  --text-muted-custom: #8892b0;
+  --text-light: #e6e6e6;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --border-radius: 16px;
+  --transition: all 0.3s ease;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+}
+
+/* ── Glassmorphism ─────────────────────── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+}
+
+/* ── Color utilities ───────────────────── */
+.text-primary-custom {
+  color: var(--primary) !important;
+}
+
+/* ── Botones personalizados ────────────── */
+.btn-primary-custom {
+  background: var(--primary);
+  border: none;
+  color: #000;
+  font-weight: 700;
+  font-family: var(--font-body);
+  transition: var(--transition);
+}
+
+.btn-primary-custom:hover,
+.btn-primary-custom:focus {
+  background: var(--primary-hover);
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(245, 197, 24, 0.35);
+}
+
+/* ── Cards oscuras ─────────────────────── */
+.dark-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.dark-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(245, 197, 24, 0.12);
+}
+
+/* ── Secciones alternadas ──────────────── */
+.section-alt {
+  background-color: var(--section-bg);
+}
+
+/* ── Badge flotante ────────────────────── */
+.badge-popular {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+  color: #000;
+  font-weight: 700;
+  font-size: 0.75rem;
+  padding: 4px 14px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+/* ── Scrollbar personalizada ───────────── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* ── Animación fade-in suave ───────────── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* ── Override Bootstrap ────────────────── */
+.btn-warning {
+  font-weight: 700;
+  color: #000;
+}
+
+.btn-warning:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(245, 197, 24, 0.35);
+}
+
+a {
+  transition: var(--transition);
+}
+
+/* ── Responsive section padding ─────────── */
+.section-pad {
+  padding: clamp(48px, 7vw, 80px) 0;
+}
+
+/* ── Mobile utilities ──────────────────── */
+@media (max-width: 767px) {
+  .hide-xs {
+    display: none !important;
+  }
+}
