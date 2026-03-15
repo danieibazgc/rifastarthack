@@ -7,8 +7,7 @@ const eventInfo = [
   { icon: 'bi-calendar-event', key: 'Fechas', value: '18 – 20 de marzo, 2026' },
   { icon: 'bi-geo-alt', key: 'Lugar', value: 'St. Gallen, Suiza 🇨🇭' },
   { icon: 'bi-stopwatch', key: 'Duración', value: '36 horas de hackathón' },
-  { icon: 'bi-building', key: 'Organizador', value: 'START Global' },
-  { icon: 'bi-airplane', key: 'Lo que necesitamos', value: 'Pasajes aéreos (~S/6,500 PEN c/u) + Viaticos (~S/3500 PEN c/u)' }
+  { icon: 'bi-building', key: 'Organizador', value: 'START Global' }
 ];
 
 const reasons = [

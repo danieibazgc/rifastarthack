@@ -62,18 +62,19 @@ function HeroSection() {
 
             {/* Descripción */}
             <p className={`${styles.description} text-center mx-auto`}>
-              100% de las ganancias van a financiar nuestro viaje a START Hack 2026 
-              en Suiza, donde representaremos a Perú en el hackathon más grande de Europa.
+              Gracias al respaldo de la <strong style={{ color: '#f5c518' }}>Universidad Tecnológica del Perú</strong>,
+              nuestros pasajes están asegurados. Ahora solo queda una misión: ir a competir y
+              dejar el nombre del Perú en alto en el hackathon más grande de Europa.
             </p>
 
             {/* Botones CTA */}
             <div className={`${styles.ctaGroup} justify-content-center`}>
               <button
-                onClick={() => handleScroll('rifa')}
+                onClick={() => handleScroll('equipo')}
                 className="btn btn-warning btn-lg fw-bold px-5"
                 style={{ borderRadius: 12 }}
               >
-                🎟️ Participar en la Rifa — S/10
+                👥 Conoce al Equipo
               </button>
               <button
                 onClick={() => handleScroll('servicios')}

@@ -3,7 +3,6 @@
 
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
-import ProgressBar from '@/components/ProgressBar';
 import TeamSection from '@/components/TeamSection';
 import EventSection from '@/components/EventSection';
 import RaffleSection from '@/components/RaffleSection';
@@ -17,7 +16,6 @@ function App() {
     <>
       <Navbar />
       <HeroSection />
-      <ProgressBar />
       <TeamSection />
       <EventSection />
       <RaffleSection />

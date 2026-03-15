@@ -97,18 +97,6 @@ function Navbar() {
                 </a>
               </li>
             ))}
-
-            {/* CTA Button */}
-            <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
-              <a
-                href="#pago"
-                className="btn btn-warning btn-sm px-4 fw-bold"
-                style={{ borderRadius: 8, fontFamily: "'Inter', sans-serif" }}
-                onClick={e => handleNavClick(e, '#pago')}
-              >
-                ¡Apoya Ahora!
-              </a>
-            </li>
           </ul>
         </div>
       </div>
