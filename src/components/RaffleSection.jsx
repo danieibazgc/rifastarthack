@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import styles from '@/styles/components/Raffle.module.css';
 import SectionTitle from '@/components/shared/SectionTitle';
 
-import jetbrainsImg from '@/assets/raffle/Jetbrains.JPG';
+import disneyPlusImg from '@/assets/raffle/DisneyPlus.jpg';
 import thisIsFineImg from '@/assets/raffle/ThisIsFine.jpg';
 import stickersProgramacionImg from '@/assets/raffle/StickersProgramacion.jpeg';
 import stickersHackingImg from '@/assets/raffle/Stickershacking.jpeg';
@@ -16,7 +16,7 @@ import ventiladorImg from '@/assets/raffle/VentiladorCuello.jpg';
 import kitMateImg from '@/assets/raffle/KitMate.jpg';
 
 const prizes = [
-  { img: jetbrainsImg,            label: 'Cupón 100% OFF — Cualquier IDE JetBrains' },
+  { img: disneyPlusImg,           label: '1 mes de Disney Plus' },
   { img: thisIsFineImg,           label: 'Peluche "This is Fine"' },
   { img: stickersProgramacionImg, label: 'Stickers de Programación' },
   { img: stickersHackingImg,      label: 'Stickers de Hacking' },
